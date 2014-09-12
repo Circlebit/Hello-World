@@ -8,4 +8,23 @@ def factorial(n):
     else: # recursive step
         return n * factorial(n-1)
 
-print factorial(5) # should be 120
+print "5! = " + str(factorial(5)) # should be 120
+print ""
+
+
+
+s = 'math'
+i = 0
+
+for c in s:
+    print c.upper() + " =",
+    if (ord(c)-96) < 10:
+        print " " + str(ord(c)-96)
+    else:
+        print str(ord(c)-96)
+    i += ord(c)-96
+
+print "------"
+print "    " + str(i) + " = 'the answer to life, the universe and everything.'"
+
+print ""
